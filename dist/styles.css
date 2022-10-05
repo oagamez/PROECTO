@@ -1,0 +1,290 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #dddddd;
+}
+
+.main-container {
+  overflow: hidden;
+  max-width: 1440px;
+  background-color: white;
+}
+
+.main-container-image {
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 188px;
+  padding-bottom: 160px;
+  height: 1000px;
+  position: relative;
+}
+
+@media (max-width: 63.9375em) {
+  .main-container-image {
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: cover;
+    padding-top: 250px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image {
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: contain;
+    padding-top: 125px;
+    height: 300px;
+  }
+}
+
+.main-container-image .card-front {
+  position: absolute;
+  left: 100px;
+  background-image: url("../images/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 245px;
+  max-width: 447px;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 63.9375em) {
+  .main-container-image .card-front {
+    left: 100px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-front {
+    left: 30px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-front .card-front-logo {
+    height: 30px;
+  }
+}
+
+.main-container-image .card-front .card-front-number {
+  margin-top: 70px;
+  font-size: 25px;
+  width: 100%;
+  content: "";
+  letter-spacing: 3px;
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-front .card-front-number {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
+
+.main-container-image .card-front .card-front-name {
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin: 0;
+  float: left;
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-front .card-front-name {
+    font-size: 8px;
+  }
+}
+
+.main-container-image .card-front .card-front-expiry {
+  display: inline;
+  float: right;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-front .card-front-expiry {
+    font-size: 8px;
+  }
+}
+
+.main-container-image .card-back {
+  position: absolute;
+  top: 470px;
+  left: 260px;
+  background-image: url("../images/bg-card-back.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 245px;
+  max-width: 447px;
+  text-align: right;
+  padding: 30px;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  background-position: center;
+}
+
+@media (max-width: 63.9375em) {
+  .main-container-image .card-back {
+    top: 100px;
+    left: 280px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-back {
+    top: 32px;
+    left: 82px;
+    height: auto;
+    background-size: cover;
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+.main-container-image .card-back .card-back-cvc {
+  position: relative;
+  top: 49%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 25px;
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-image .card-back .card-back-cvc {
+    position: relative;
+    margin-top: 23%;
+    margin-bottom: 20%;
+    font-size: 8px;
+    margin-right: 5%;
+  }
+}
+
+.main-container-form {
+  max-width: 380px;
+  margin: 277px auto 0 350px;
+}
+
+@media (max-width: 63.9375em) {
+  .main-container-form {
+    margin: 150px auto 0 auto;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .main-container-form {
+    margin: 10px auto 0 auto;
+    padding-right: auto;
+    padding-left: auto;
+    width: 90%;
+  }
+}
+
+.main-container-form .form-group {
+  margin-bottom: 5px;
+}
+
+.main-container-form label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-container-form input {
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(#ced4da), to(#ced4da));
+  background-image: linear-gradient(white, white), linear-gradient(#ced4da, #ced4da);
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.main-container-form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: double 1px transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#6448fe), to(#600594));
+  background-image: linear-gradient(white, white), linear-gradient(to right, #6448fe, #600594);
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.main-container-form .set-error-effect {
+  border-color: #ff5252;
+}
+
+.main-container-form .error-message {
+  visibility: hidden;
+  color: #ff5252;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.main-container-form .set-error-message {
+  visibility: visible;
+}
+
+.main-container-form .form-group-expiry .form-group-expiry-year {
+  padding-right: 24px;
+  padding-left: 0;
+}
+
+.main-container-form .form-group-cvc {
+  padding-left: 0;
+}
+
+.main-container-form .confirm-button {
+  background-color: #21092f;
+  border: none;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  margin-bottom: 20px;
+}
+
+.main-container-form .confirm-button:hover {
+  background-color: #600594;
+}
+
+.main-container-form .confirm-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.thankyou {
+  margin: 20px 0;
+  display: none;
+}
+
+.thankyou .complete-icon {
+  margin: 35px 0;
+}
+
+.thankyou .title {
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.thankyou .subtitle {
+  font-size: 13px;
+  color: #8e8593;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=styles.css.map */

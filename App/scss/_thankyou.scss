@@ -1,0 +1,22 @@
+.thankyou{
+    margin: 20px 0;
+    display: none;
+    
+    .complete-icon{
+        margin: 35px 0;
+    }
+
+    .title{
+        text-transform: uppercase;
+        font-size: 21px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    .subtitle{
+        font-size: 13px;
+        color: $dark-grayish-violet;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+}
